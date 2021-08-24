@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}NFL Betting Sites{% endblock %}
+
+{% block content %}
+{% load static %}
+<div style="width: 95%; height:auto; margin:auto; margin-bottom: 5px; margin-top: 5px;">
+<a href="#!">
+  <img src="{% static "/images/betfred_offer.jpg" %}" style='height: 45%; width: 45%; object-fit:contain' alt="BETFRED Offer"/>
+</a>
+</div>
+
+<div style="width: 95%; height:auto; background-color: #e5f1ff; margin:auto;">
+{% for cat in categories %}
+	{% if cat.category_title == "NFL Betting" %}
+	    <strong>{{cat.category_title}}  Review</strong>
+	    {{cat.category_content|safe}}
+	    {% endif %}
+{% endfor %}
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %}BETVICTOR Review{% endblock %}
+
+{% block content %}
+{% load static %}
+<div id="over" style="width: 95%; height:auto; margin:auto; margin-bottom: 5px; margin-top: 5px;">
+<a href="#!">
+  <img src="{% static "/images/betvictor_offer.jpg" %}" style='height: 25%; width: 25%; object-fit:contain' alt="BETVICTOR Offer"/>
+</a>
+</div>
+
+<div style="width: 95%; height:auto; background-color: #e3e3e3; height:auto; margin:auto; margin-bottom: 5px; margin-top: 5px;">
+{% for rev in reviews %}
+	{% if rev.review_title == "BETVICTOR" %}
+	    <strong>{{rev.review_title}}  Review</strong>
+	    {{rev.review_content|safe}}
+	    {% endif %}
+{% endfor %}
+
+<div style="text-align: center;">
+	<a href="https://www.betvictor.com/"><button type="button" class="btn btn-success" style="width: 70%; height: 25%;"><strong>GET THIS BONUS</strong><p style="margin:auto; font-size: 10px">with a £5 deposit</p></button></a>
+	<p style="font-size: 7px; text-align: center;">18+, new UK players only, be GambleAware. Promo code: 20FREE. New UK+IRE customers. Paypal and certain deposit types and bet types excluded. Min £5 bet within 14 days of account reg at min odds 1/2 = 4 x £5 free bets. Free bets valid for 4 days on sports, stake not returned, restrictions apply. 18+ begambleaware.com T&Cs apply.</p>
+</div>
+</div>
+{% endblock %}

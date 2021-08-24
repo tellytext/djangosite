@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{% block title %}BETFRED Review{% endblock %}
+
+{% block content %}
+{% load static %}
+<div id="over" style="width: 95%; height:auto; margin:auto; margin-bottom: 5px; margin-top: 5px;">
+<a href="#!">
+  <img src="{% static "/images/betfred_offer.jpg" %}" style='height: 25%; width: 25%; object-fit:contain' alt="BETFRED Offer"/>
+</a>
+</div>
+
+<div style="width: 95%; height:auto; background-color: #e3e3e3; height:auto; margin:auto; margin-bottom: 5px; margin-top: 5px;">
+{% for rev in reviews %}
+	{% if rev.review_title == "BETFRED" %}
+	    <h1 style="text-align: center;"><strong>{{rev.review_title}}  Review</strong></h1>
+	    {{rev.review_content|safe}}
+	    {% endif %}
+{% endfor %}
+<div style="text-align: center;">
+ <a href="#!"><button type="button" class="btn btn-success" style="width: 70%; height: 25%;"><strong>GET THIS BONUS</strong><p style="margin:auto; font-size: 10px">with a £10 deposit</p></button></a>
+ <p style="font-size: 7px; text-align: center;">18+, new UK players only, be GambleAware. New customers only. BeGambleAware.org. Minimum deposit £10. Place any sportsbook bet (except Racing) of £20+ at minimum odds of 1.40 (2/5) to receive your free bets and casino bonus. 35x wagering on casino bonus. Free bet will expire 7 days after opt in. £20 Casino bonus will expire after 30 days of opt-in.</p>
+</div>
+</div>
+{% endblock %}

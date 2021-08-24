@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Dallas Cowboy Betting{% endblock %}
+
+{% block content %}
+{% load static %}
+<div style="width: 95%; height:auto; background-color: #e3e3e3; height:auto; margin:auto; margin-bottom: 5px; margin-top: 5px;">
+{% for team in teams %}
+	{% if team.team_title == "Cowboys Betting" %}
+	    <h1 style="text-align: center;"><strong>{{team.team_title}}  Review</strong></h1>
+	    {{team.team_content|safe}}
+	    {% endif %}
+{% endfor %}
+</div>
+</div>
+{% endblock %}
