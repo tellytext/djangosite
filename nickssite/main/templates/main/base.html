@@ -135,6 +135,7 @@
 			  background-color: #1abc9c;
 			  color: white;
 			  text-align: center;
+			  text-decoration: none;
 			}
 		#myBtn {
 			  display: none; /* Hidden by default */
@@ -157,14 +158,20 @@
 			}
 		#footer-list ul{
 		  list-style: none;
+		  text-decoration: none;
 		}
 		#footer-list li{
 		  display: inline;
+		  text-decoration: none;
+		}
+		#footer-list a{
+		  display: inline;
+		  text-decoration: none;
 		}
 	</style>
 </head>
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class='fas fa-arrow-up' style='color:white'></i></button>
 	<nav class="navbar navbar-expand-md navbar-light" style="max-width:100%; margin:auto;">
 	  <a class="navbar-brand" style="font-family:HiraginoSans-W6; text-align:center;" href="/"><b>Best NFL </br> Betting Sites</a></b>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -270,7 +277,31 @@
 					        <li><a href="#!">Privacy & Cookies</a></li>
 					      </ul>
 					    </div>
-					<p>  bestnflbettingsites.com© 2020</p>
+					    <div id="footer-list">
+					    	<ul>
+					    	  <li>
+					    	  	<a href="#!">
+						          <img src="{% static "/static/images/twitter.png" %}" style='height: 5%; width: 5%;' alt="twitter"">
+						        </a>
+						      </li>
+							  <li>
+					    	  	<a href="#!">
+						          <img src="{% static "/static/images/facebook.png" %}" style='height: 5%; width: 5%;' alt="Facebook"">
+						        </a>
+						      </li>
+						      <li>
+					    	  	<a href="#!">
+						          <img src="{% static "/static/images/insta.png" %}" style='height: 5%; width: 5%;' alt="Instagram"">
+						        </a>
+						      </li>
+						      <li>
+					    	  	<a href="#!">
+						          <img src="{% static "/static/images/youtube.png" %}" style='height: 5%; width: 5%;' alt="YouTube"">
+						        </a>
+						      </li>
+					    	</ul>
+					    </div>
+					<p>bestnflbettingsites.com© 2020</p>
 				</div>
 		</div>
 	</footer>
