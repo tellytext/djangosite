@@ -172,12 +172,13 @@
 </head>
 <body>
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class='fas fa-arrow-up' style='color:white'></i></button>
-	<nav class="navbar navbar-expand-md navbar-light" style="max-width:100%; margin:auto;">
-	 <div class="container">
-	  <a class="navbar-brand" href="/"><img src="{% static "images/jackpot_profile.jpeg" %}" style='height: 15%; width: 15%;border-radius: 50%;' alt="jackpot profile"></a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-	    <span class="navbar-toggler-icon"></span>
+
+	<nav class="navbar navbar-expand-md navbar-light">
+	  <a href='#' class="navbar-brand">
+	  	<img src="{% static "images/jackpot_profile.jpeg" %}" style='height: 15%; width: 15%;border-radius: 50%;' alt="jackpot profile"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span>
 	  </button>
+	  
 	  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 	    <ul class="navbar-nav">
 	      <li class="nav-item">
@@ -202,7 +203,6 @@
 	        <a class="nav-link" href="/poker-offers/">Poker Offers</a>
 	      </li>
 	    </ul>
-	  </div>
 	</div>
 	</nav>
 	<div class="scrollmenu">
