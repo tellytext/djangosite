@@ -22,3 +22,6 @@ def cowboys(request):
 
 def nflbetting(request):
 	return render(request = request, template_name='main/nflbetting.html', context = {"categories": Categorie.objects.all})
+
+def pokeroffers(request):
+	return render(request = request, template_name='main/pokeroffers.html', context = {"categories": Categorie.objects.all})	
