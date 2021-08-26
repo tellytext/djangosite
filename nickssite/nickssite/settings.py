@@ -25,7 +25,7 @@ SECRET_KEY = 'qxo4fqaj9y^qwh4p^wtuo#ldtc^9=cu!8-@zy9zo-b+pi)(^z*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '192.168.1.253', '127.0.0.1', '192.168.0.7', '192.168.0.33', 'https://npotts.pythonanywhere.com/']
+ALLOWED_HOSTS = ['https://npotts.pythonanywhere.com/', 'npotts.pythonanywhere.com']
 
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
