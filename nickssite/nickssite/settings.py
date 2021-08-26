@@ -26,7 +26,7 @@ SECRET_KEY = 'qxo4fqaj9y^qwh4p^wtuo#ldtc^9=cu!8-@zy9zo-b+pi)(^z*'
 DEBUG = True
 
 MOBILE_HOST = ''
-LOCAL_HOST = ''
+LOCAL_HOST = '192.168.0.33'
 
 ALLOWED_HOSTS = ['https://npotts.pythonanywhere.com/', 'npotts.pythonanywhere.com', LOCAL_HOST, MOBILE_HOST]
 
