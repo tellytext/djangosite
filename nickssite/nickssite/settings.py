@@ -25,7 +25,7 @@ SECRET_KEY = 'qxo4fqaj9y^qwh4p^wtuo#ldtc^9=cu!8-@zy9zo-b+pi)(^z*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-MOBILE_HOST = ''
+MOBILE_HOST = '192.168.0.7'
 LOCAL_HOST = ''
 
 ALLOWED_HOSTS = ['https://npotts.pythonanywhere.com/', 'npotts.pythonanywhere.com', LOCAL_HOST, MOBILE_HOST]
