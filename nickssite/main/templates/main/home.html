@@ -4,13 +4,14 @@
 
 {% block content %}
 {% load static %}
-<!-- Start of US only code -->
 
 <div class="pageheader">
 <h1 style="color:#7A4442; text-align:center;"><strong>Best Casino Providers for New York</strong></h1>
 <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in nibh urna.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
+
+<!-- Carousel Starts -->
 <div id="demo" class="carousel slide" data-ride="carousel" style="padding-bottom: 5px;">
 
   <!-- Indicators -->
@@ -19,7 +20,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <li data-target="#demo" data-slide-to="1"></li>
     <li data-target="#demo" data-slide-to="2"></li>
   </ul>
-  
+
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -32,7 +33,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <img src="{% static "images/jackpot_banner.jpeg" %}" alt="Los Angeles" style='width:100%; height:100%;'>
     </div>
   </div>
-  
+
   <!-- Left and right controls -->
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
@@ -41,6 +42,41 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
+
+<!-- Carousel Ends -->
+
+<!-- Dropdown Starts -->
+<div class="dropdown" style="padding-bottom:5px">
+  <button data-display="static" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%; text-align:left; background-color: transparent; padding-bottom:5px; color:black;">
+    Select Your Welcome Bonuses
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">1st Deposit Bonus</a>
+    <a class="dropdown-item" href="#">New Casinos</a>
+    <a class="dropdown-item" href="#">No Desposit</a>
+    <a class="dropdown-item" href="#">Best Value £10</a>
+    <a class="dropdown-item" href="#">Best Value £20</a>
+    <a class="dropdown-item" href="#">Best Value £50</a>
+    <a class="dropdown-item" href="#">Free Spins</a>
+  </div>
+</div>
+<!-- Dropdown Ends -->
+
+<select class="div-toggle" data-target=".my-info-1">
+  <option value="orange" data-show=".citrus">Orange</option>
+  <option value="lemon" data-show=".citrus">Lemon</option>
+  <option value="apple" data-show=".pome">Apple</option>
+  <option value="pear" data-show=".pome">Pear</option>
+</select>
+
+<div class="my-info-1">
+  <div class="citrus hide">Citrus is...</div>
+  <div class="pome hide">A pome is...</div>
+</div>
+
+
+<!-- Offers Table Starts -->
+<!-- Start of US only code -->
 <table>
   <tr>
     <div class="w3-bar w3-border w3-pale-red" style="max-width: 100%"><div class="w3-bar-item"><i class="fa fa-bolt" aria-hidden="true"></i><strong> Top NFL Sportsbook Betting Operator </strong><i class="fa fa-bolt" aria-hidden="true"></i></div></div>
@@ -51,8 +87,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   <tr>
       <div style="float:left; width: 100%; height:auto; background-color: #daddd6; margin-top:2px; text-align: center;">
         <strong><p style="text-align:center;"><i class="fas fa-fire"></i> Licensed New York Casino Operator</p></strong>
-        <a href="https://www.betvictor.com/">
-          <img src="{% static "images/DraftKings_Sportsbook.jpg" %}" style='height: 50%; width: 50%; object-fit:contain' alt="DraftKings Sportsbook Offer" style="border-radius: 5%;"/>
+        <a href="https://www.draftkings.com/">
+          <img src="{% static "images/DraftKings_Sportsbook.jpg" %}" style='height: 50%; width: 50%; object-fit:contain;' alt="DraftKings Sportsbook Offer" style="border-radius: 5%;"/>
         </a>
         <a href="/betvictor/" style="font-size:12px; display:block; text-align:center">See Review</a>
         <span class="fa fa-star checked"></span>
@@ -63,8 +99,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p style="font-size:9px; text-align:center;">T&Cs apply</p>
       </div>
       <div style="float:right; width:100%; height:auto; text-align:center; padding-bottom: 10px;">
-        <p style="text-align:center; font-size:14px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
-        <p style="text-align:center; font-size:14px; font-weight:bold; margin:auto; width:90%;">$500 Deposit Bonus</p>
+        <p style="text-align:center; font-size:18px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
+        <p style="text-align:center; font-size:18px; font-weight:bold; margin:auto; width:90%;">$500 Deposit Bonus + Receive Up To $500 Free Bets</p>
         <a href="https://www.sportsbook.draftkings.com/"><button type="button" class="btn btn-success" style="width: 70%; height: 25%;"><strong>GET THIS BONUS</strong><p style="margin:auto; font-size: 10px">Up to $500</p></button></a>
       </div>
   </tr>
@@ -91,8 +127,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p style="font-size:9px; text-align:center;">T&Cs apply</p>
         </div>
         <div style="float:right; width:100%; height:auto; text-align:center; padding-bottom: 10px;">
-        <p style="text-align:center; font-size:14px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
-        <p style="text-align:center; font-size:14px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">BET £10 GET £30</p>
+        <p style="text-align:center; font-size:18px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
+        <p style="text-align:center; font-size:18px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">BET £10 GET £30</p>
         <a href="https://casino.draftkings.com/"><button type="button" class="btn btn-success" style="width: 70%; height: 25%;"><strong>GET THIS BONUS</strong><p style="margin:auto; font-size: 10px">with a £10 deposit</p></button></a>
     </div>
   </tr>
@@ -102,14 +138,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   <hr>
 
 <!-- End of US only code -->
-
-
-
-
-
-
-
-
 
 <!-- Start of UK only code -->
 
@@ -133,13 +161,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <span class="fa fa-star checked"></span>
         <p style="font-size:9px; text-align:center;">T&Cs apply</p>
         </div><div style="float:right; width:100%; height:auto; text-align:center; padding-bottom: 10px;">
-        <p style="text-align:center; font-size:14px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
-        <p style="text-align:center; font-size:14px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">BET £5 GET £40</p>
+        <p style="text-align:center; font-size:18px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
+        <p style="text-align:center; font-size:18px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">BET £5 GET £40</p>
         <a href="https://www.betvictor.com/"><button type="button" class="btn btn-success" style="width: 70%; height: 25%;"><strong>GET THIS BONUS</strong><p style="margin:auto; font-size: 10px">with a £5 deposit</p></button></a>
     </div>
   </tr>
   <div style="clear:both"></div>
-  <p style="font-size: 7px; text-align: center;">18+, new UK players only, be GambleAware. Promo code: 20FREE. New UK+IRE customers. Paypal and certain deposit types and bet types excluded. Min £5 bet within 14 days of account reg at min odds 1/2 = 4 x £5 free bets. Free bets valid for 4 days on sports, stake not returned, restrictions apply. 18+ begambleaware.com T&Cs apply.</p>
+  <p style="font-size: 7px; text-align: center;">18+, new UK players only, be GambleAware. Promo code: 20FREE. New UK+IRE customers. Paypal and certain deposit types and bet types excluded. Min £5 bet within 18 days of account reg at min odds 1/2 = 4 x £5 free bets. Free bets valid for 4 days on sports, stake not returned, restrictions apply. 18+ begambleaware.com T&Cs apply.</p>
 
   <hr>
   <div class="w3-bar w3-border w3-pale-red" style="max-width: 100%"><div class="w3-bar-item"><i class="fas fa-fire"></i><strong> Casino Betting Operator Of The Month </strong><i class="fas fa-fire"></i></div></div>
@@ -161,8 +189,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p style="font-size:9px; text-align:center;">T&Cs apply</p>
         </div>
         <div style="float:right; width:100%; height:auto; text-align:center; padding-bottom: 10px;">
-        <p style="text-align:center; font-size:14px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
-        <p style="text-align:center; font-size:14px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">BET £10 GET £30</p>
+        <p style="text-align:center; font-size:18px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
+        <p style="text-align:center; font-size:18px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">BET £10 GET £30</p>
         <a href=""><button type="button" class="btn btn-success" style="width: 70%; height: 25%;"><strong>GET THIS BONUS</strong><p style="margin:auto; font-size: 10px">with a £10 deposit</p></button></a>
     </div>
   </tr>
@@ -189,8 +217,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p style="font-size:9px; text-align:center;">T&Cs apply</p>
         </div>
         <div style="float:right; width:100%; height:auto; text-align:center; padding-bottom: 10px;">
-        <p style="text-align:center; font-size:14px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
-        <p style="text-align:center; font-size:14px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">£40 BONUS</p>
+        <p style="text-align:center; font-size:18px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
+        <p style="text-align:center; font-size:18px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">£40 BONUS</p>
         <a href=""><button type="button" class="btn btn-success" style="width: 70%; height: 25%;"><strong>GET THIS BONUS</strong><p style="margin:auto; font-size: 10px">with a £10 deposit</p></button></a>
     </div>
   </tr>
@@ -217,8 +245,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p style="font-size:9px; text-align:center;">T&Cs apply</p>
         </div>
         <div style="float:right; width:100%; height:auto; text-align:center; padding-bottom: 10px;">
-        <p style="text-align:center; font-size:14px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
-        <p style="text-align:center; font-size:14px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">GET £30 IN FREE BETS</p>
+        <p style="text-align:center; font-size:18px; color:green; font-weight:bold;">RECOMMENDED OFFER</p>
+        <p style="text-align:center; font-size:18px; font-weight:bold; margin:auto; margin-bottom: 5px; width:90%;">GET £30 IN FREE BETS</p>
         <a href="#!"><button type="button" class="btn btn-success" style="width: 70%; height: 25%;"><strong>GET THIS BONUS</strong><p style="margin:auto; font-size: 10px">with a £10 deposit</p></button></a>
     </div>
   </tr>
@@ -230,4 +258,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <!-- End of UK only code -->
 
 </table>
+
+<!-- Offers Table Starts Ends -->
+
 {% endblock %}

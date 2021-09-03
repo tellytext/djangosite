@@ -7,6 +7,10 @@
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery end -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="{% static "/images/favi.png" %}">
@@ -37,7 +41,7 @@
 		}
 
 		div.scrollmenu {
-		  background-color: #7A4442;
+		  background-color: #593230;
 		  overflow: auto;
 		  white-space: nowrap;
 		}
@@ -168,7 +172,21 @@
 		  display: inline;
 		  text-decoration: none;
 		}
+		.hide {
+		  display: none;
+		}
 	</style>
+	<script type="text/javascript">
+		$(document).on('change', '.div-toggle', function() {
+		  var target = $(this).data('target');
+		  var show = $("option:selected", this).data('show');
+		  $(target).children().addClass('hide');
+		  $(show).removeClass('hide');
+		});
+		$(document).ready(function() {
+		  $('.div-toggle').trigger('change');
+		});
+	</script>
 </head>
 <body>
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class='fas fa-arrow-up' style='color:white'></i></button>
@@ -177,7 +195,11 @@
 <!-- 		<a class="navbar-brand" href="#" style="display: flex;align-items: flex-end;">
 		    <img src="{% static "images/jackpot_profile.jpeg" %}" alt="Los Angeles" style='width:15%; height:15%; border-radius: 50%;'>
 		</a> -->
-	  <a class="navbar-brand" style="font-family:HiraginoSans-W6; text-align:center;" href="/"><b>Site Header </br> Here</a></b>
+	  <!--<a class="navbar-brand" style="font-family:HiraginoSans-W6; text-align:center;" href="/"><b>Site Header </br> Here</a></b>-->
+        <a href="#" class="navbar-brand">
+            <img src="{% static "images/jackpot_profile.jpeg" %}" height="54" style="border-radius: 50%; border: 2.5px solid #7A4442;" alt="Jackpot Profile">
+        </a>
+        <a class="navbar-brand" style="font-family:HiraginoSans-W6; text-align:center;" href="/"><b>Site Header </br> Here</b></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span>
 	  </button>
 
@@ -227,8 +249,8 @@
 	  <a href="#blog">Browns Betting</a>
 	</div>
 	<div class="awardmenu">
-		<a href="/"><i class="fas fa-fire"></i> Live Casino Offers</a>
 		<a href="/casinooffers/"><i class="fa fa-star checked"></i> Slots Offers</a>
+		<a href="/"><i class="fas fa-fire"></i> Live Casino Offers</a>
 		<a href="/pokeroffers/"><i class="fa fa-bolt"></i> Poker Offers</a>
 	</div>
 	<div id="content" class="main_container">
@@ -236,12 +258,9 @@
 		{% endblock %}
 	</div>
 	<!-- Optional JavaScript -->
-	<!-- TinyMCE JS -->
-	<script src="{% static 'tinymce/js/prism.js' %}"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- TinyMCE JS -->
+	<script src="{% static 'tinymce/js/prism.js' %}"></script>
     <script>
 	//Get the button
 	var mybutton = document.getElementById("myBtn");
@@ -309,5 +328,5 @@
 				</div>
 		</div>
 	</footer>
-</body)
+</body/>
 </html>
